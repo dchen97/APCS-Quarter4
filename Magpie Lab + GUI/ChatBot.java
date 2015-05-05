@@ -28,6 +28,11 @@ public class ChatBot
 		{
 			response = "Say something, please.";
 		}
+		
+		else if (findKeyword(statement, "hello") >= 0 || findKeyword(statement, "hi") >= 0 ||
+		 findKeyword(statement, "hey") >=0){
+		    response = getGreeting();
+		  }
 
 		else if (findKeyword(statement, "no") >= 0)
 		{
