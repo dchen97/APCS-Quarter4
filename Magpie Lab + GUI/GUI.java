@@ -79,7 +79,7 @@ public class GUI extends JFrame
             public void actionPerformed (ActionEvent evt)
             {
                 String F = c.getResponse(userTextField.getText());
-                history.append("You:" + userTextField.getText()+ "\n");
+                history.append("You: " + userTextField.getText()+ "\n");
                 history.append("Magpie: " + F + "\n");
                 userTextField.setText("");
             }
